@@ -45,7 +45,11 @@ def result():
 def con_result():
   print("당신이 먹을 음식은 => ", end='')
 
-
+def res_sort_choice(arr):
+  res_choice = random.choice(arr)
+  result()
+  print(res_choice)
+  
 # 시작
 random_menu()
 random_select = int(input())
@@ -53,53 +57,33 @@ if random_select == 1:  # 1번
   choice1 = random.choice(menu_sort)
   print(choice1)
   if choice1 == "한식":
-    res_choice = random.choice(korean_restaurant)
-    result()
-    print(res_choice)
+    res_sort_choice(korean_restaurant)
   elif choice1 == "아시안":
-    res_choice = random.choice(asian_restaurant)
-    result()
-    print(res_choice)
+    res_sort_choice(asian_restaurant)
   elif choice1 == "양식":
-    res_choice = random.choice(yangsik_restaurant)
-    result()
-    print(res_choice)
+    res_sort_choice(yangsik_restaurant)
   elif choice1 == "카페":
-    res_choice = random.choice(cafe)
-    result()
-    print(res_choice)
+    res_sort_choice(cafe)
   elif choice1 == "편의점":
     res_choice = random.choice(convient_food)
     con_result()
     print(res_choice)
   else:
-    res_choice = random.choice(luxury_restaurant)
-    result()
-    print(res_choice)
+    res_sort_choice(luxury_restaurant)
 else:  # 2번
   menu()
   restaurant_select = int(input())
   if restaurant_select == 1:  # 한식 식당
-    choice2 = random.choice(korean_restaurant)
-    result()
-    print(choice2)
+    res_sort_choice(korean_restaurant)
   elif restaurant_select == 2:  # 아시안 식당
-    choice2 = random.choice(asian_restaurant)
-    result()
-    print(choice2)
+    res_sort_choice(asian_restaurant)
   elif restaurant_select == 3:  # 양식 식당
-    choice2 = random.choice(yangsik_restaurant)
-    result()
-    print(choice2)
+    res_sort_choice(yangsik_restaurant)
   elif restaurant_select == 4:  # 카페, 디저트류
-    choice2 = random.choice(cafe)
-    result()
-    print(choice2)
+    res_sort_choice(cafe)
   elif restaurant_select == 5:  # 편의점 메뉴
     choice2 = random.choice(convient_food)
     con_result()
     print(choice2)
   else:  # 고오급 메뉴
-    choice2 = random.choice(luxury_restaurant)
-    result()
-    print(choice2)
+    res_sort_choice(luxury_restaurant)
