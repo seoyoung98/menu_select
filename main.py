@@ -23,7 +23,7 @@ convient_food = ["라면", "도시락", "삼각김밥", "컵밥"]
 luxury_restaurant = ["낙곱새미장원", "스시엔준", "유부(스시)"]
 
 
-# 메뉴 함수
+# 어떤 식으로 고를지, 아예 랜덤, 종류는 정할지 함수
 def random_menu():
   print("메뉴를 정하기 어려우신가요? 당신의 점심 메뉴를 정해드립니다.")
   # print("번호를 골라주세요.")
@@ -33,23 +33,34 @@ def random_menu():
   print("선택 >> ", end='')
 
 
+# 종류를 알려주는 메뉴
+# 종류 선택이 가능할 때 보여준다.
+# 그냥도 보여줄지 고민해보기
+# 인터페이스 어떻게 생긴지 고민해보기
 def menu():
   print("----------------------------------------------------------------")
   print("1. 한식 | 2. 아시안 | 3. 양식 | 4. 디저트 | 5. 편의점 | 6. 럭셔리")
   print("----------------------------------------------------------------")
   print("선택 >> ", end='')
 
+
+# 식당 결과
 def result():
   print("당신이 갈 식당은 => ", end='')
 
+
+# 편의점 음식 결과, 나중에 종류가 더 생기면 추가하기
 def con_result():
   print("당신이 먹을 음식은 => ", end='')
 
+
+#
 def res_sort_choice(arr):
   res_choice = random.choice(arr)
   result()
   print(res_choice)
-  
+
+
 # 시작
 random_menu()
 random_select = int(input())
@@ -72,6 +83,7 @@ if random_select == 1:  # 1번
     res_sort_choice(luxury_restaurant)
 else:  # 2번
   menu()
+  # 종류 선택받기
   restaurant_select = int(input())
   if restaurant_select == 1:  # 한식 식당
     res_sort_choice(korean_restaurant)
