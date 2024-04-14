@@ -10,10 +10,11 @@
 ## 실행 결과
 ### 종류도 못 고를때!
 ![image](https://github.com/seoyoung98/menu_select/assets/80522538/a58c8bd0-a336-463d-a6f1-ca953bac7ca3)
+</br></br>
 ### 종류는 고를때!
 ![image](https://github.com/seoyoung98/menu_select/assets/80522538/15bdb23a-a252-4a44-80e3-c2fcfab1f52d)
 ㅎㅎㅎㅎㅎㅎ
 
 ## 아쉬운 점
-직접 노가다로 식당을 입력해 놓은 것이 많이 많이 아쉽다.
+직접 노가다로 식당을 입력해 놓은 것이 많이 많이 아쉽다. </br>
 꼭 사이트까지 미니 프로젝트로 만들어봐야지
